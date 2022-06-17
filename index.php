@@ -4,7 +4,7 @@ class Combination3Digits
 {
   private $numbers = [];
 
-  public function __construct($startNumber = 100, $endNumber = 109)
+  public function __construct($startNumber = 0, $endNumber = 999)
   {
     for ($i = $startNumber; $i <= $endNumber; $i++) {
       if ($i == ($i % 10)) $number = "00" . $i;
